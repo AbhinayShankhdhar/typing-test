@@ -1,6 +1,6 @@
 const words = "the be of and a to in he have it that for they with as not on she at by this we you do but from or which one would all will there say who make go when what so up out about get time look see know take people into year your good some could them other than then now only come over think also back after use two how our work first well way even new want because any these give day most us great small every lead big result keep practice type fast code learn build world life hand part place week point home water room mother area money story fact month lot right study book eye job word business issue side kind head house service friend father power hour game line end member law car city community name team minute idea kid body face others level office door health person art war history party result change morning reason research girl guy moment air teacher force education".split(" ");
 
-const TIME = 90;
+const TIME = 100;
 const display = document.getElementById("text-display");
 const input = document.getElementById("input");
 const timeEl = document.getElementById("time");
