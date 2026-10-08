@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:wght@400;600&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #2b1055, #0f0c29 70%);
+  color: #e6e6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-top: 0;
+  background: linear-gradient(90deg, #00f5d4, #9b5de5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.stats { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.stats p {
+  margin: 0;
+  background: rgba(155, 93, 229, 0.15);
+  border: 1px solid rgba(155, 93, 229, 0.4);
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+.stats span { color: #00f5d4; font-weight: 600; }
+
+#text-display {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: left;
+  color: #6c6c8a;
+  margin: 25px 0;
+  user-select: none;
+}
+
+.correct { color: #e6e6f0; }
+.wrong { color: #ff4d6d; background: rgba(255, 77, 109, 0.15); border-radius: 3px; }
+.current { border-left: 2px solid #00f5d4; animation: blink 1s infinite; }
+@keyframes blink { 50% { border-color: transparent; } }
+
+#input {
+  width: 100%;
+  height: 80px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #e6e6f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+}
+#input:focus { border-color: #00f5d4; }
+
+#result { font-size: 22px; font-weight: 600; color: #00f5d4; min-height: 30px; }
+
+#restart {
+  padding: 12px 35px;
+  font-size: 17px;
+  font-family: inherit;
+  background: linear-gradient(90deg, #00f5d4, #9b5de5);
+  color: #0f0c29;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#restart:hover { transform: scale(1.05); }
